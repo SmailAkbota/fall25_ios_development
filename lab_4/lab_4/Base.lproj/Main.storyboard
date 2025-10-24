@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ARSKView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvW-nZ-Dgj">
+                                <rect key="frame" x="127" y="553" width="161" height="46"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLk-1s-Uq3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="kyQ-Ss-iNC">
+                                <rect key="frame" x="205" y="361" width="172" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="172" id="0vM-ne-jiu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="466-A0-zzU"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="171" id="Uir-0v-EQO"/>
+                                    <constraint firstAttribute="height" constant="130" id="kUR-02-Szw"/>
+                                    <constraint firstAttribute="width" constant="170" id="wk1-e1-WrN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dice3" translatesAutoresizingMaskIntoConstraints="NO" id="gZo-F3-X3E">
+                                <rect key="frame" x="16" y="361" width="171" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="0Xm-d0-3DM"/>
+                                    <constraint firstAttribute="height" constant="130" id="JIq-ru-kiZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="c15-38-yLu"/>
+                                    <constraint firstAttribute="width" constant="170" id="t87-JH-Olp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" image="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="gZo-F3-X3E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q4T-oM-GGT"/>
+                            <constraint firstItem="kyQ-Ss-iNC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WP2-eW-S1Y"/>
+                            <constraint firstItem="zvW-nZ-Dgj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yzg-Jm-WVs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dice1" destination="kyQ-Ss-iNC" id="nSx-1S-SCE"/>
+                        <outlet property="dice2" destination="gZo-F3-X3E" id="G8d-Cu-nIu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice2" width="100" height="100"/>
+        <image name="dice3" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
